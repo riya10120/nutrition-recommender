@@ -1,0 +1,83 @@
+/* Base Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fefefe;
+  color: #333;
+}
+
+/* Container Card */
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: #5a3e85;
+  margin-bottom: 20px;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Fields */
+input, select {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #fafafa;
+  transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #a78bfa;
+  background: #fff;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  font-size: 16px;
+  background: #a78bfa;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #7c3aed;
+}
+
+/* Result Box */
+#result {
+  margin-top: 25px;
+  background: #f3e8ff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #e5d3fa;
+}
+
+/* Log Out Button */
+.logout-btn {
+  background: #ff5c5c;
+  margin-top: 20px;
+}
+
+.logout-btn:hover {
+  background: #e02e2e;
+}

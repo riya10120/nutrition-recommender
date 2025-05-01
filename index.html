@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutrition Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="loginPage">
+    <h1>Nutrition Recommender</h1>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Enter your name" required />
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+
+  <div class="container" id="mainPage" style="display: none;">
+    <h2>Welcome, <span id="userDisplay"></span>!</h2>
+    <form id="nutritionForm">
+      <label for="goal">Health Goal:</label>
+      <select id="goal" required>
+        <option value="">Choose...</option>
+        <option value="weight_loss">Lose Weight</option>
+        <option value="muscle_gain">Build Muscle</option>
+        <option value="maintain">Stay Fit</option>
+      </select>
+
+      <label for="preference">Dietary Preference:</label>
+      <select id="preference" required>
+        <option value="">Choose...</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten_free">Gluten-Free</option>
+        <option value="none">No Preference</option>
+      </select>
+
+      <label for="activity">Activity Level:</label>
+      <select id="activity" required>
+        <option value="">Choose...</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <button type="submit">Get Plan</button>
+    </form>
+
+    <div id="result"></div>
+    <button onclick="logout()" class="logout-btn">Log Out</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
